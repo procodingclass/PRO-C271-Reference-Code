@@ -130,6 +130,9 @@ void food_eat_check() {
     food_y = random(0, 8);
 
     snake_length++;
+    threshold = threshold - 50;
+    if (threshold < 100)
+          threshold = 80;
   }
 
 }
